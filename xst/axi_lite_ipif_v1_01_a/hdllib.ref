@@ -1,0 +1,6 @@
+EN slave_attachment NULL C:/Users/tariqmuh/Documents/GitHub/ECE552_CamCtl/../../../../../Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd sub00/vhpl02 1392672581
+AR axi_lite_ipif imp C:/Users/tariqmuh/Documents/GitHub/ECE552_CamCtl/../../../../../Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd sub00/vhpl05 1392672584
+AR address_decoder imp C:/Users/tariqmuh/Documents/GitHub/ECE552_CamCtl/../../../../../Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd sub00/vhpl01 1392672566
+EN address_decoder NULL C:/Users/tariqmuh/Documents/GitHub/ECE552_CamCtl/../../../../../Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd sub00/vhpl00 1392672565
+AR slave_attachment imp C:/Users/tariqmuh/Documents/GitHub/ECE552_CamCtl/../../../../../Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd sub00/vhpl03 1392672582
+EN axi_lite_ipif NULL C:/Users/tariqmuh/Documents/GitHub/ECE552_CamCtl/../../../../../Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd sub00/vhpl04 1392672583

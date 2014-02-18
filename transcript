@@ -1,0 +1,778 @@
+# Reading C:/modeltech64_10.1c/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {vmodcam_tb.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fifo
+# -- Compiling architecture spartan6 of fifo
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fifo
+# -- Compiling architecture fifo_a of fifo
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity fifo_generator_v9_2_bhv_as
+# -- Loading entity fifo_generator_v9_2_bhv_ss
+# -- Loading entity fifo_generator_v9_2_conv
+# -- Loading entity fifo_generator_v9_2
+# ** Warning: (vlib-34) Library already exists at "proc_common_v3_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package proc_common_pkg
+# -- Compiling package body proc_common_pkg
+# -- Loading package proc_common_pkg
+# ** Warning: (vlib-34) Library already exists at "proc_common_v3_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Compiling package family_support
+# -- Compiling package body family_support
+# -- Loading package family_support
+# ** Warning: (vlib-34) Library already exists at "proc_common_v3_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading package family_support
+# -- Compiling entity muxf_struct
+# -- Compiling architecture imp of muxf_struct
+# -- Compiling entity muxf_struct_f
+# -- Compiling architecture imp of muxf_struct_f
+# -- Loading entity muxf_struct
+# ** Warning: (vlib-34) Library already exists at "proc_common_v3_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Compiling entity dynshreg_f
+# -- Loading package family_support
+# -- Compiling architecture behavioral of dynshreg_f
+# -- Loading entity muxf_struct_f
+# ** Warning: (vlib-34) Library already exists at "proc_common_v3_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cntr_incr_decr_addn_f
+# -- Loading package NUMERIC_STD
+# -- Compiling architecture imp of cntr_incr_decr_addn_f
+# -- Loading package family_support
+# ** Warning: (vlib-34) Library already exists at "proc_common_v3_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Compiling entity srl_fifo_rbu_f
+# -- Compiling architecture imp of srl_fifo_rbu_f
+# -- Loading entity cntr_incr_decr_addn_f
+# -- Loading entity dynshreg_f
+# ** Warning: (vlib-34) Library already exists at "proc_common_v3_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Compiling entity srl_fifo_f
+# -- Compiling architecture imp of srl_fifo_f
+# -- Loading package NUMERIC_STD
+# -- Loading entity srl_fifo_rbu_f
+# ** Warning: (vlib-34) Library already exists at "proc_common_v3_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package family_support
+# -- Compiling entity pselect_f
+# -- Compiling architecture imp of pselect_f
+# ** Warning: (vlib-34) Library already exists at "proc_common_v3_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package ipif_pkg
+# -- Loading package proc_common_pkg
+# -- Compiling package body ipif_pkg
+# -- Loading package ipif_pkg
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity axi_master_burst_wr_demux
+# -- Compiling architecture implementation of axi_master_burst_wr_demux
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity axi_master_burst_strb_gen
+# -- Compiling architecture implementation of axi_master_burst_strb_gen
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity axi_master_burst_rdmux
+# -- Compiling architecture implementation of axi_master_burst_rdmux
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading entity srl_fifo_f
+# -- Compiling entity axi_master_burst_fifo
+# -- Compiling architecture imp of axi_master_burst_fifo
+# ** Warning: (vlib-34) Library already exists at "proc_common_v3_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package family_support
+# -- Compiling entity counter_f
+# -- Compiling architecture imp of counter_f
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading entity srl_fifo_f
+# -- Loading entity axi_master_burst_fifo
+# -- Compiling entity axi_master_burst_wr_status_cntl
+# -- Compiling architecture implementation of axi_master_burst_wr_status_cntl
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading entity srl_fifo_f
+# -- Loading entity axi_master_burst_fifo
+# -- Loading entity axi_master_burst_strb_gen
+# -- Compiling entity axi_master_burst_wrdata_cntl
+# -- Compiling architecture implementation of axi_master_burst_wrdata_cntl
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity axi_master_burst_stbs_set
+# -- Compiling architecture implementation of axi_master_burst_stbs_set
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity axi_master_burst_skid_buf
+# -- Compiling architecture implementation of axi_master_burst_skid_buf
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity axi_master_burst_wr_demux
+# -- Compiling entity axi_master_burst_skid2mm_buf
+# -- Compiling architecture implementation of axi_master_burst_skid2mm_buf
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity axi_master_burst_rd_status_cntl
+# -- Compiling architecture implementation of axi_master_burst_rd_status_cntl
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity axi_master_burst_rdmux
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading entity srl_fifo_f
+# -- Loading entity axi_master_burst_fifo
+# -- Compiling entity axi_master_burst_rddata_cntl
+# -- Compiling architecture implementation of axi_master_burst_rddata_cntl
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity axi_master_burst_strb_gen
+# -- Compiling entity axi_master_burst_pcc
+# -- Compiling architecture implementation of axi_master_burst_pcc
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity axi_master_burst_first_stb_offset
+# -- Compiling architecture implementation of axi_master_burst_first_stb_offset
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading entity srl_fifo_f
+# -- Loading entity axi_master_burst_fifo
+# -- Compiling entity axi_master_burst_addr_cntl
+# -- Compiling architecture implementation of axi_master_burst_addr_cntl
+# ** Warning: (vlib-34) Library already exists at "axi_lite_ipif_v1_01_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading package family_support
+# -- Loading entity pselect_f
+# -- Loading package ipif_pkg
+# -- Compiling entity address_decoder
+# -- Compiling architecture IMP of address_decoder
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity axi_master_burst_wr_llink
+# -- Compiling architecture implementation of axi_master_burst_wr_llink
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity axi_master_burst_reset
+# -- Compiling architecture implementation of axi_master_burst_reset
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity axi_master_burst_strb_gen
+# -- Loading entity axi_master_burst_pcc
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading entity srl_fifo_f
+# -- Loading entity axi_master_burst_fifo
+# -- Loading entity axi_master_burst_addr_cntl
+# -- Loading entity axi_master_burst_rdmux
+# -- Loading entity axi_master_burst_rddata_cntl
+# -- Loading entity axi_master_burst_wrdata_cntl
+# -- Loading entity axi_master_burst_rd_status_cntl
+# -- Loading entity axi_master_burst_wr_status_cntl
+# -- Loading entity axi_master_burst_skid_buf
+# -- Loading entity axi_master_burst_wr_demux
+# -- Loading entity axi_master_burst_skid2mm_buf
+# -- Compiling entity axi_master_burst_rd_wr_cntlr
+# -- Compiling architecture implementation of axi_master_burst_rd_wr_cntlr
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity axi_master_burst_rd_llink
+# -- Compiling architecture implementation of axi_master_burst_rd_llink
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity axi_master_burst_stbs_set
+# -- Loading entity axi_master_burst_first_stb_offset
+# -- Compiling entity axi_master_burst_cmd_status
+# -- Compiling architecture implementation of axi_master_burst_cmd_status
+# ** Warning: (vlib-34) Library already exists at "axi_lite_ipif_v1_01_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package proc_common_pkg
+# -- Loading package ipif_pkg
+# -- Loading package family_support
+# -- Loading entity counter_f
+# -- Compiling entity slave_attachment
+# -- Compiling architecture imp of slave_attachment
+# -- Loading entity pselect_f
+# -- Loading entity address_decoder
+# ** Warning: (vlib-34) Library already exists at "proc_common_v3_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package VCOMPONENTS
+# -- Compiling entity soft_reset
+# -- Compiling architecture implementation of soft_reset
+# ** Warning: (vlib-34) Library already exists at "axi_master_burst_v1_00_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity axi_master_burst_reset
+# -- Loading entity axi_master_burst_stbs_set
+# -- Loading entity axi_master_burst_first_stb_offset
+# -- Loading entity axi_master_burst_cmd_status
+# -- Loading entity axi_master_burst_strb_gen
+# -- Loading entity axi_master_burst_pcc
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading entity srl_fifo_f
+# -- Loading entity axi_master_burst_fifo
+# -- Loading entity axi_master_burst_addr_cntl
+# -- Loading entity axi_master_burst_rdmux
+# -- Loading entity axi_master_burst_rddata_cntl
+# -- Loading entity axi_master_burst_wrdata_cntl
+# -- Loading entity axi_master_burst_rd_status_cntl
+# -- Loading entity axi_master_burst_wr_status_cntl
+# -- Loading entity axi_master_burst_skid_buf
+# -- Loading entity axi_master_burst_wr_demux
+# -- Loading entity axi_master_burst_skid2mm_buf
+# -- Loading entity axi_master_burst_rd_wr_cntlr
+# -- Loading entity axi_master_burst_rd_llink
+# -- Loading entity axi_master_burst_wr_llink
+# -- Compiling entity axi_master_burst
+# -- Compiling architecture implementation of axi_master_burst
+# ** Warning: (vlib-34) Library already exists at "axi_lite_ipif_v1_01_a".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package proc_common_pkg
+# -- Loading package family_support
+# -- Loading package ipif_pkg
+# -- Compiling entity axi_lite_ipif
+# -- Compiling architecture imp of axi_lite_ipif
+# -- Loading entity counter_f
+# -- Loading entity slave_attachment
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading entity srl_fifo_f
+# -- Compiling entity user_logic
+# -- Compiling architecture IMP of user_logic
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading package ipif_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package VCOMPONENTS
+# -- Loading entity soft_reset
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package family_support
+# -- Loading entity axi_lite_ipif
+# -- Loading entity axi_master_burst_reset
+# -- Loading entity axi_master_burst_stbs_set
+# -- Loading entity axi_master_burst_first_stb_offset
+# -- Loading entity axi_master_burst_cmd_status
+# -- Loading entity axi_master_burst_strb_gen
+# -- Loading entity axi_master_burst_pcc
+# -- Loading entity srl_fifo_f
+# -- Loading entity axi_master_burst_fifo
+# -- Loading entity axi_master_burst_addr_cntl
+# -- Loading entity axi_master_burst_rdmux
+# -- Loading entity axi_master_burst_rddata_cntl
+# -- Loading entity axi_master_burst_wrdata_cntl
+# -- Loading entity axi_master_burst_rd_status_cntl
+# -- Loading entity axi_master_burst_wr_status_cntl
+# -- Loading entity axi_master_burst_skid_buf
+# -- Loading entity axi_master_burst_wr_demux
+# -- Loading entity axi_master_burst_skid2mm_buf
+# -- Loading entity axi_master_burst_rd_wr_cntlr
+# -- Loading entity axi_master_burst_rd_llink
+# -- Loading entity axi_master_burst_wr_llink
+# -- Loading entity axi_master_burst
+# -- Compiling entity vmodcam
+# -- Compiling architecture IMP of vmodcam
+# -- Loading entity user_logic
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module vmodcam_tb
+# 
+# Top level modules:
+# 	vmodcam_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.vmodcam_tb glbl 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "slave_attachment(imp)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "axi_master_burst_pcc(implementation)".
+# 
+# ** Note: (vopt-143) Recognized 5 FSMs in architecture body "user_logic(IMP)".
+# 
+# Loading work.vmodcam_tb(fast)
+# Loading work.glbl(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading proc_common_v3_00_a.proc_common_pkg(body)
+# Loading proc_common_v3_00_a.ipif_pkg(body)
+# Loading ieee.numeric_std(body)
+# Loading unisim.vcomponents
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading proc_common_v3_00_a.family_support(body)
+# Loading work.vmodcam(imp)#1
+# Loading axi_lite_ipif_v1_01_a.axi_lite_ipif(imp)#1
+# Loading axi_lite_ipif_v1_01_a.slave_attachment(imp)#1
+# Loading axi_lite_ipif_v1_01_a.address_decoder(imp)#1
+# Loading proc_common_v3_00_a.pselect_f(imp)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst(implementation)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_reset(implementation)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_cmd_status(implementation)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_first_stb_offset(implementation)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_stbs_set(implementation)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rd_wr_cntlr(implementation)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_pcc(implementation)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_strb_gen(implementation)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_strb_gen(implementation)#2
+# Loading axi_master_burst_v1_00_a.axi_master_burst_addr_cntl(implementation)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rddata_cntl(implementation)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rdmux(implementation)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rd_status_cntl(implementation)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_skid_buf(implementation)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_wrdata_cntl(implementation)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_wr_status_cntl(implementation)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_fifo(imp)#1
+# Loading proc_common_v3_00_a.srl_fifo_f(imp)#1
+# Loading proc_common_v3_00_a.srl_fifo_rbu_f(imp)#1
+# Loading proc_common_v3_00_a.cntr_incr_decr_addn_f(imp)#1
+# Loading unisim.muxcy_l(muxcy_l_v)#1
+# Loading unisim.xorcy(xorcy_v)#1
+# Loading unisim.fds(fds_v)#1
+# Loading proc_common_v3_00_a.dynshreg_f(behavioral)#1
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.srlc16e(srlc16e_v)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_fifo(imp)#2
+# Loading proc_common_v3_00_a.srl_fifo_f(imp)#2
+# Loading proc_common_v3_00_a.srl_fifo_rbu_f(imp)#2
+# Loading proc_common_v3_00_a.dynshreg_f(behavioral)#2
+# Loading axi_master_burst_v1_00_a.axi_master_burst_skid2mm_buf(implementation)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_wr_demux(implementation)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rd_llink(implementation)#1
+# Loading axi_master_burst_v1_00_a.axi_master_burst_wr_llink(implementation)#1
+# Loading proc_common_v3_00_a.soft_reset(implementation)#1
+# Loading unisim.fdrse(fdrse_v)#1
+# Loading work.user_logic(imp)#1
+# Loading proc_common_v3_00_a.srl_fifo_f(imp)#3
+# Loading proc_common_v3_00_a.srl_fifo_rbu_f(imp)#3
+# Loading proc_common_v3_00_a.dynshreg_f(behavioral)#3
+# Loading work.fifo(fifo_a)#1
+# Loading xilinxcorelib.fifo_generator_v9_2(behavioral)#1
+# Loading xilinxcorelib.fifo_generator_v9_2_conv(behavioral)#1
+# Loading xilinxcorelib.fifo_generator_v9_2_bhv_as(behavioral)#1
+# ** Warning: (vsim-8684) No drivers exist on out port /vmodcam_tb/uut/USER_LOGIC_I/CAM_FIFO/U0/gconvfifo/inst_conv_fifo/DATA_COUNT, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /vmodcam_tb/uut/USER_LOGIC_I/CAM_FIFO/U0/DATA_COUNT.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMA_SDA has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMA_SCL has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMA_D_I(7) has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMA_D_I(6) has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMA_D_I(5) has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMA_D_I(4) has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMA_D_I(3) has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMA_D_I(2) has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMA_D_I(1) has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMA_D_I(0) has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMA_PCLK_I has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized out port /vmodcam_tb/uut/USER_LOGIC_I/CAMA_MCLK_O has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMA_LV_I has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMA_FV_I has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized out port /vmodcam_tb/uut/USER_LOGIC_I/CAMA_RST_O has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized out port /vmodcam_tb/uut/USER_LOGIC_I/CAMA_PWDN_O has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized out port /vmodcam_tb/uut/USER_LOGIC_I/CAMX_VDDEN_O has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMB_SDA has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMB_SCL has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMB_D_I(7) has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMB_D_I(6) has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMB_D_I(5) has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMB_D_I(4) has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMB_D_I(3) has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMB_D_I(2) has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMB_D_I(1) has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMB_D_I(0) has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMB_PCLK_I has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized out port /vmodcam_tb/uut/USER_LOGIC_I/CAMB_MCLK_O has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMB_LV_I has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized inout port /vmodcam_tb/uut/USER_LOGIC_I/CAMB_FV_I has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized out port /vmodcam_tb/uut/USER_LOGIC_I/CAMB_RST_O has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized out port /vmodcam_tb/uut/USER_LOGIC_I/CAMB_PWDN_O has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: tariqmuh  Hostname: ADMIN-PC  ProcessID: 32964
+# 
+#           Attempting to use alternate WLF file "./wlftea62j9".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftea62j9
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+#    Time: 0 ps  Iteration: 0  Instance: /vmodcam_tb/uut/USER_LOGIC_I/CAM_FIFO/U0/gconvfifo/inst_conv_fifo
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vmodcam_tb/uut/USER_LOGIC_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vmodcam_tb/uut/USER_LOGIC_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vmodcam_tb/uut/USER_LOGIC_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vmodcam_tb/uut/USER_LOGIC_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vmodcam_tb/uut/USER_LOGIC_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vmodcam_tb/uut/USER_LOGIC_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vmodcam_tb/uut/USER_LOGIC_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vmodcam_tb/uut/USER_LOGIC_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vmodcam_tb/uut/USER_LOGIC_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vmodcam_tb/uut/USER_LOGIC_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vmodcam_tb/uut/USER_LOGIC_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vmodcam_tb/uut/USER_LOGIC_I
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /vmodcam_tb/uut/USER_LOGIC_I
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /vmodcam_tb/uut/USER_LOGIC_I/DATA_CAPTURE_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /vmodcam_tb/uut/USER_LOGIC_I/DATA_CAPTURE_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /vmodcam_tb/uut/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /vmodcam_tb/uut/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL
+# ** Warning: (vsim-31) Unable to unlink file "C:/Users/tariqmuh/Documents/GitHub/ECE532_CAMCtl_MS/work/_opt2__lock".
+# 
+# Permission denied. (errno = EACCES)

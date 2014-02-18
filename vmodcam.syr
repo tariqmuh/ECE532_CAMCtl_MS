@@ -1,0 +1,355 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.41 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.41 secs
+ 
+--> Reading design: vmodcam.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "vmodcam.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "vmodcam"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : vmodcam
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\tariqmuh\Documents\GitHub\ECE552_CamCtl\ipcore_dir\fifo.vhd" into library work
+Parsing entity <fifo>.
+Parsing architecture <fifo_a> of entity <fifo>.
+Parsing VHDL file "C:\Users\tariqmuh\Documents\GitHub\ECE552_CamCtl\ipcore_dir\fifo_synth.vhd" into library work
+Parsing entity <fifo>.
+Parsing architecture <spartan6> of entity <fifo>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_wr_demux.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_wr_demux>.
+Parsing architecture <implementation> of entity <axi_master_burst_wr_demux>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_strb_gen.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_strb_gen>.
+Parsing architecture <implementation> of entity <axi_master_burst_strb_gen>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_rdmux.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_rdmux>.
+Parsing architecture <implementation> of entity <axi_master_burst_rdmux>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_fifo.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_fifo>.
+Parsing architecture <imp> of entity <axi_master_burst_fifo>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_wr_status_cntl.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_wr_status_cntl>.
+Parsing architecture <implementation> of entity <axi_master_burst_wr_status_cntl>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_wrdata_cntl.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_wrdata_cntl>.
+Parsing architecture <implementation> of entity <axi_master_burst_wrdata_cntl>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_stbs_set.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_stbs_set>.
+Parsing architecture <implementation> of entity <axi_master_burst_stbs_set>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_skid_buf.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_skid_buf>.
+Parsing architecture <implementation> of entity <axi_master_burst_skid_buf>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_skid2mm_buf.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_skid2mm_buf>.
+Parsing architecture <implementation> of entity <axi_master_burst_skid2mm_buf>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_rd_status_cntl.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_rd_status_cntl>.
+Parsing architecture <implementation> of entity <axi_master_burst_rd_status_cntl>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_rddata_cntl.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_rddata_cntl>.
+Parsing architecture <implementation> of entity <axi_master_burst_rddata_cntl>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_pcc.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_pcc>.
+Parsing architecture <implementation> of entity <axi_master_burst_pcc>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_first_stb_offset.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_first_stb_offset>.
+Parsing architecture <implementation> of entity <axi_master_burst_first_stb_offset>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_addr_cntl.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_addr_cntl>.
+Parsing architecture <implementation> of entity <axi_master_burst_addr_cntl>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_lite_ipif_v1_01_a\hdl\vhdl\address_decoder.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <address_decoder>.
+Parsing architecture <IMP> of entity <address_decoder>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_wr_llink.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_wr_llink>.
+Parsing architecture <implementation> of entity <axi_master_burst_wr_llink>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_reset.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_reset>.
+Parsing architecture <implementation> of entity <axi_master_burst_reset>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_rd_wr_cntlr.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_rd_wr_cntlr>.
+Parsing architecture <implementation> of entity <axi_master_burst_rd_wr_cntlr>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_rd_llink.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_rd_llink>.
+Parsing architecture <implementation> of entity <axi_master_burst_rd_llink>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_cmd_status.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_cmd_status>.
+Parsing architecture <implementation> of entity <axi_master_burst_cmd_status>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_lite_ipif_v1_01_a\hdl\vhdl\slave_attachment.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <slave_attachment>.
+Parsing architecture <imp> of entity <slave_attachment>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\soft_reset.vhd" into library proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst>.
+Parsing architecture <implementation> of entity <axi_master_burst>.
+Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_lite_ipif_v1_01_a\hdl\vhdl\axi_lite_ipif.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <axi_lite_ipif>.
+Parsing architecture <imp> of entity <axi_lite_ipif>.
+Parsing VHDL file "C:\Users\tariqmuh\Documents\GitHub\ECE552_CamCtl\user_logic.vhd" into library work
+Parsing entity <user_logic>.
+Parsing architecture <IMP> of entity <user_logic>.
+Parsing VHDL file "C:\Users\tariqmuh\Documents\GitHub\ECE552_CamCtl\vmodcam.vhd" into library work
+Parsing entity <vmodcam>.
+Parsing architecture <IMP> of entity <vmodcam>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <vmodcam> (architecture <IMP>) with generics from library <work>.
+
+Elaborating entity <axi_lite_ipif> (architecture <imp>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <slave_attachment> (architecture <imp>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <address_decoder> (architecture <IMP>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+INFO:HDLCompiler:679 - "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_lite_ipif_v1_01_a\hdl\vhdl\slave_attachment.vhd" Line 412. Case statement is complete. others clause is never selected
+
+Elaborating entity <axi_master_burst> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_reset> (architecture <implementation>) from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_cmd_status> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+WARNING:HDLCompiler:1127 - "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_cmd_status.vhd" Line 430: Assignment to sig_pcc_cmd_rdy ignored, since the identifier is never used
+
+Elaborating entity <axi_master_burst_first_stb_offset> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_stbs_set> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+WARNING:HDLCompiler:1127 - "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_cmd_status.vhd" Line 971: Assignment to sig_stat_tag_reg ignored, since the identifier is never used
+
+Elaborating entity <axi_master_burst_rd_wr_cntlr> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+WARNING:HDLCompiler:871 - "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_rd_wr_cntlr.vhd" Line 581: Using initial value '0' for sig_md_error_reg since it is never assigned
+
+Elaborating entity <axi_master_burst_pcc> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+WARNING:HDLCompiler:1127 - "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_pcc.vhd" Line 766: Assignment to sig_input_reg_full ignored, since the identifier is never used
+
+Elaborating entity <axi_master_burst_strb_gen> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_strb_gen> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+WARNING:HDLCompiler:1127 - "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_pcc.vhd" Line 1057: Assignment to sig_xfer_reg_full ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_pcc.vhd" Line 1848. Case statement is complete. others clause is never selected
+
+Elaborating entity <axi_master_burst_addr_cntl> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+WARNING:HDLCompiler:1127 - "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_addr_cntl.vhd" Line 665: Assignment to sig_next_tag_reg ignored, since the identifier is never used
+
+Elaborating entity <axi_master_burst_rddata_cntl> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_rdmux> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+WARNING:HDLCompiler:1127 - "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_rddata_cntl.vhd" Line 1349: Assignment to sig_coelsc_reg_empty ignored, since the identifier is never used
+
+Elaborating entity <axi_master_burst_rd_status_cntl> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_skid_buf> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_wrdata_cntl> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+WARNING:HDLCompiler:1127 - "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_master_burst_v1_00_a\hdl\vhdl\axi_master_burst_wrdata_cntl.vhd" Line 1504: Assignment to sig_fifo_next_drr ignored, since the identifier is never used
+
+Elaborating entity <axi_master_burst_wr_status_cntl> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_fifo> (architecture <imp>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <srl_fifo_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <srl_fifo_rbu_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <cntr_incr_decr_addn_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+WARNING:HDLCompiler:89 - "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\cntr_incr_decr_addn_f.vhd" Line 161: <muxcy_l> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\cntr_incr_decr_addn_f.vhd" Line 171: <xorcy> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\cntr_incr_decr_addn_f.vhd" Line 180: <fds> remains a black-box since it has no binding entity.
+
+Elaborating entity <dynshreg_f> (architecture <behavioral>) with generics from library <proc_common_v3_00_a>.
+WARNING:HDLCompiler:89 - "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\dynshreg_f.vhd" Line 197: <srlc16e> remains a black-box since it has no binding entity.
+
+Elaborating entity <axi_master_burst_fifo> (architecture <imp>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <srl_fifo_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <srl_fifo_rbu_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <dynshreg_f> (architecture <behavioral>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <axi_master_burst_skid2mm_buf> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_wr_demux> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_rd_llink> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_wr_llink> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <soft_reset> (architecture <implementation>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <user_logic> (architecture <IMP>) with generics from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\tariqmuh\Documents\GitHub\ECE552_CamCtl\user_logic.vhd" Line 808. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\tariqmuh\Documents\GitHub\ECE552_CamCtl\user_logic.vhd" Line 863. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\tariqmuh\Documents\GitHub\ECE552_CamCtl\user_logic.vhd" Line 998. Case statement is complete. others clause is never selected
+
+Elaborating entity <srl_fifo_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <srl_fifo_rbu_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <cntr_incr_decr_addn_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <dynshreg_f> (architecture <behavioral>) with generics from library <proc_common_v3_00_a>.
+ERROR:HDLCompiler:890 - "C:\Users\tariqmuh\Documents\GitHub\ECE552_CamCtl\user_logic.vhd" Line 1108: wait statement without UNTIL clause not supported for synthesis
+Netlist user_logic(0,16,4,32,32,12,32,9,32)(IMP) remains a blackbox, due to errors in its contents
+--> 
+
+Total memory usage is 254308 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

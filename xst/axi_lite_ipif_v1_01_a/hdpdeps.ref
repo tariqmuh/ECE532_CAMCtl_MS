@@ -1,0 +1,37 @@
+V3 16
+FL C:/Users/tariqmuh/Documents/GitHub/ECE552_CamCtl/../../../../../Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd 2012/07/16.03:34:22 P.28xd
+EN axi_lite_ipif_v1_01_a/address_decoder 1392672565 \
+      FL C:/Users/tariqmuh/Documents/GitHub/ECE552_CamCtl/../../../../../Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 \
+      LB proc_common_v3_00_a PB proc_common_v3_00_a/proc_common_pkg 1392672507 \
+      EN proc_common_v3_00_a/pselect_f 1392672522 PB proc_common_v3_00_a/ipif_pkg 1392672521 \
+      PB proc_common_v3_00_a/family_support 1392672505
+AR axi_lite_ipif_v1_01_a/address_decoder/IMP 1392672566 \
+      FL C:/Users/tariqmuh/Documents/GitHub/ECE552_CamCtl/../../../../../Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd \
+      EN axi_lite_ipif_v1_01_a/address_decoder 1392672565 CP integer \
+      CP std_logic_vector CP proc_common_v3_00_a/pselect_f
+FL C:/Users/tariqmuh/Documents/GitHub/ECE552_CamCtl/../../../../../Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd 2012/07/16.03:34:22 P.28xd
+EN axi_lite_ipif_v1_01_a/axi_lite_ipif 1392672583 \
+      FL C:/Users/tariqmuh/Documents/GitHub/ECE552_CamCtl/../../../../../Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/STD_LOGIC_UNSIGNED 1341906179 \
+      PB ieee/NUMERIC_STD 1341906182 PB ieee/std_logic_misc 1341906178 \
+      LB proc_common_v3_00_a PB proc_common_v3_00_a/proc_common_pkg 1392672507 \
+      PB proc_common_v3_00_a/family_support 1392672505 \
+      PB proc_common_v3_00_a/ipif_pkg 1392672521 LB axi_lite_ipif_v1_01_a
+AR axi_lite_ipif_v1_01_a/axi_lite_ipif/imp 1392672584 \
+      FL C:/Users/tariqmuh/Documents/GitHub/ECE552_CamCtl/../../../../../Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd \
+      EN axi_lite_ipif_v1_01_a/axi_lite_ipif 1392672583 \
+      CP axi_lite_ipif_v1_01_a/slave_attachment
+FL C:/Users/tariqmuh/Documents/GitHub/ECE552_CamCtl/../../../../../Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd 2012/07/16.03:34:22 P.28xd
+EN axi_lite_ipif_v1_01_a/slave_attachment 1392672581 \
+      FL C:/Users/tariqmuh/Documents/GitHub/ECE552_CamCtl/../../../../../Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179 PB ieee/std_logic_misc 1341906178 \
+      LB proc_common_v3_00_a PB proc_common_v3_00_a/proc_common_pkg 1392672507 \
+      PB proc_common_v3_00_a/ipif_pkg 1392672521 \
+      PB proc_common_v3_00_a/family_support 1392672505 \
+      EN proc_common_v3_00_a/counter_f 1392672518 LB axi_lite_ipif_v1_01_a
+AR axi_lite_ipif_v1_01_a/slave_attachment/imp 1392672582 \
+      FL C:/Users/tariqmuh/Documents/GitHub/ECE552_CamCtl/../../../../../Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd \
+      EN axi_lite_ipif_v1_01_a/slave_attachment 1392672581 \
+      CP axi_lite_ipif_v1_01_a/address_decoder CP integer CP std_logic_vector

@@ -1,0 +1,226 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\tariqmuh\Documents\GitHub\ECE552_CamCtl
+T_opt
+VR8]SjNiz]AWE8AH@F1`<W1
+Z1 04 10 4 work vmodcam_tb fast 0
+Z2 04 4 4 work glbl fast 0
+=2-0022fb0bc04e-53039816-28-ef74
+Z3 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip +acc
+n@_opt
+Z4 OL;O;10.1c;51
+Z5 dC:\Users\tariqmuh\Documents\GitHub\ECE552_CamCtl
+T_opt1
+VM7G]ZaNTSS<9_5^>@RzJ22
+R1
+R2
+=9-0022fb0bc04e-5303695b-6c-80c4
+R3
+n@_opt1
+R4
+R5
+T_opt2
+VPB6HkM3h[A:]MQ<H=6[Ub3
+R1
+R2
+=1-0022fb0bc04e-53039a37-2c2-ed18
+R3
+n@_opt2
+R4
+Efifo
+Z6 w1392740618
+Z7 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z8 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z9 dC:\Users\tariqmuh\Documents\GitHub\ECE532_CAMCtl_MS
+Z10 8ipcore_dir/fifo.vhd
+Z11 Fipcore_dir/fifo.vhd
+l0
+L43
+Vf[:683YgHFn6_bG3F5CKl3
+Z12 OL;C;10.1c;51
+31
+Z13 !s108 1392744964.929000
+Z14 !s90 -reportprogress|300|-explicit|-93|ipcore_dir/fifo.vhd|
+Z15 !s107 ipcore_dir/fifo.vhd|
+Z16 o-explicit -93
+Z17 tExplicit 1
+!s100 Hi8h]fkPjZWh7g_j`l=c=0
+!i10b 1
+Afifo_a
+Z18 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z19 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+DEx13 xilinxcorelib 19 fifo_generator_v9_2 0 22 IaH>FoWCLKFKmGhHO;9_m0
+R7
+R8
+DEx4 work 4 fifo 0 22 f[:683YgHFn6_bG3F5CKl3
+l269
+L58
+VZBelNIUI3>ICF4k`Hoe`K2
+R12
+31
+R13
+R14
+R15
+R16
+R17
+!s100 mY;FhITS5lRI^<70GK1UV3
+!i10b 1
+Aspartan6
+R7
+R8
+DEx4 work 4 fifo 0 22 ^=J:RM>GIHoJ1[9n?PW:01
+l73
+L72
+VX8U^B2XYN`@1VKDUX27l52
+R12
+31
+R16
+R17
+Fipcore_dir/fifo_synth.vhd
+8ipcore_dir/fifo_synth.vhd
+!s100 :ij0`^?=2m<>ll7ILJ4M50
+!s108 1392744964.503000
+!s90 -reportprogress|300|-explicit|-93|ipcore_dir/fifo_synth.vhd|
+!s107 ipcore_dir/fifo_synth.vhd|
+!i10b 1
+vglbl
+IW9UJ8IoROFALKE?8lbXdT3
+VM[9mS]S:KA1i4VeCMX35[3
+R9
+w1341886849
+8C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v
+FC:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+Z20 OL;L;10.1c;51
+r1
+31
+Z21 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 eVQ[CMQ^moDGX6<b[kHWP1
+!s90 -reportprogress|300|C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v|
+!i10b 1
+!s85 0
+!s108 1392745010.226000
+!s107 C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v|
+Euser_logic
+Z22 w1392744361
+Z23 DEx19 proc_common_v3_00_a 10 srl_fifo_f 0 22 a2Y7oSYn5Lg14C9Q9]VhC3
+Z24 DPx19 proc_common_v3_00_a 15 proc_common_pkg 0 22 nVA2gg8b>fmcdoI3?l]3Q1
+R18
+R19
+R7
+R8
+R9
+Z25 8user_logic.vhd
+Z26 Fuser_logic.vhd
+l0
+L117
+VaYJ@NVW5:`Rj?FGaJcN`o2
+R12
+31
+Z27 !s108 1392745002.803000
+Z28 !s90 -reportprogress|300|-explicit|-93|user_logic.vhd|
+Z29 !s107 user_logic.vhd|
+R16
+R17
+!s100 =<Z7o>oT_5Z>>i]7WonBN1
+!i10b 1
+Aimp
+R23
+R24
+R18
+R19
+R7
+R8
+Z30 DEx4 work 10 user_logic 0 22 aYJ@NVW5:`Rj?FGaJcN`o2
+l420
+L233
+VRgzV`bf]_go9NJhn24K7T2
+R12
+31
+R27
+R28
+R29
+R16
+R17
+!s100 @E5He6c5;TA]8W[JDRi?S3
+!i10b 1
+Evmodcam
+Z31 w1392671912
+Z32 DEx24 axi_master_burst_v1_00_a 16 axi_master_burst 0 22 1lM9P7LjEKhL?`AX_0M@a0
+Z33 DPx19 proc_common_v3_00_a 14 family_support 0 22 1X`TZZQ9:T0cnjOd0MNeJ3
+Z34 DPx8 synopsys 10 attributes 0 22 J^T`lPA_8_J<l8kQiVE]>2
+Z35 DPx4 ieee 14 std_logic_misc 0 22 >dU:RInm^_6_mBJ^<6QGY2
+Z36 DEx21 axi_lite_ipif_v1_01_a 13 axi_lite_ipif 0 22 nZgil<HVQHE:M7E`S`JUA2
+Z37 DPx6 unisim 11 vcomponents 0 22 8T5IogZ]Om:_d>aF`2QCV0
+Z38 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z39 DEx19 proc_common_v3_00_a 10 soft_reset 0 22 ??XjiNEMkm`l7DcUzYB;K2
+Z40 DPx19 proc_common_v3_00_a 8 ipif_pkg 0 22 3LB;^iIf3Oh9Md2;[ng<V1
+R24
+R18
+R19
+R7
+R8
+R9
+Z41 8vmodcam.vhd
+Z42 Fvmodcam.vhd
+l0
+L153
+VhYV5CFE0DPMaSISDUIX`m0
+R12
+31
+Z43 !s108 1392745006.957000
+Z44 !s90 -reportprogress|300|-explicit|-93|vmodcam.vhd|
+Z45 !s107 vmodcam.vhd|
+R16
+R17
+!s100 VIWTRNAk8;V[A^gDW>m0V1
+!i10b 1
+Aimp
+R30
+R39
+R32
+R36
+R33
+R34
+R35
+R37
+R38
+R40
+R24
+R18
+R19
+R7
+R8
+DEx4 work 7 vmodcam 0 22 hYV5CFE0DPMaSISDUIX`m0
+l428
+L297
+V9j?Ti0L93045V^[zb9<bG2
+R12
+31
+R43
+R44
+R45
+R16
+R17
+!s100 fkzOTT9dRl8SFk@Ga`40I3
+!i10b 1
+vvmodcam_tb
+IZ^6d1IYanP6dIQdCYJl:T0
+VLh[;J1Y0@b=_cFiQfQYjG3
+R9
+w1392743712
+8vmodcam_tb.v
+Fvmodcam_tb.v
+L0 25
+R20
+r1
+31
+R21
+!s100 dU7I1k4HKIAlY`A4=2UIZ1
+!s90 -reportprogress|300|vmodcam_tb.v|
+!s108 1392745009.408000
+!s107 vmodcam_tb.v|
+!i10b 1
+!s85 0
