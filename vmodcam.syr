@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.41 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.31 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.41 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.31 secs
  
 --> Reading design: vmodcam.prj
 
@@ -108,12 +108,12 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\tariqmuh\Documents\GitHub\ECE552_CamCtl\ipcore_dir\fifo.vhd" into library work
-Parsing entity <fifo>.
-Parsing architecture <fifo_a> of entity <fifo>.
-Parsing VHDL file "C:\Users\tariqmuh\Documents\GitHub\ECE552_CamCtl\ipcore_dir\fifo_synth.vhd" into library work
+Parsing VHDL file "C:\fpga\ISE\ECE532_CAMCtl_MS\ipcore_dir\fifo_synth.vhd" into library work
 Parsing entity <fifo>.
 Parsing architecture <spartan6> of entity <fifo>.
+Parsing VHDL file "C:\fpga\ISE\ECE532_CAMCtl_MS\ipcore_dir\fifo.vhd" into library work
+Parsing entity <fifo>.
+Parsing architecture <fifo_a> of entity <fifo>.
 Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\proc_common_pkg.vhd" into library proc_common_v3_00_a
 Parsing package <proc_common_pkg>.
 Parsing package body <proc_common_pkg>.
@@ -218,10 +218,10 @@ Parsing architecture <implementation> of entity <axi_master_burst>.
 Parsing VHDL file "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_lite_ipif_v1_01_a\hdl\vhdl\axi_lite_ipif.vhd" into library axi_lite_ipif_v1_01_a
 Parsing entity <axi_lite_ipif>.
 Parsing architecture <imp> of entity <axi_lite_ipif>.
-Parsing VHDL file "C:\Users\tariqmuh\Documents\GitHub\ECE552_CamCtl\user_logic.vhd" into library work
+Parsing VHDL file "C:\fpga\ISE\ECE532_CAMCtl_MS\user_logic.vhd" into library work
 Parsing entity <user_logic>.
 Parsing architecture <IMP> of entity <user_logic>.
-Parsing VHDL file "C:\Users\tariqmuh\Documents\GitHub\ECE552_CamCtl\vmodcam.vhd" into library work
+Parsing VHDL file "C:\fpga\ISE\ECE532_CAMCtl_MS\vmodcam.vhd" into library work
 Parsing entity <vmodcam>.
 Parsing architecture <IMP> of entity <vmodcam>.
 
@@ -332,9 +332,9 @@ Elaborating entity <axi_master_burst_wr_llink> (architecture <implementation>) w
 Elaborating entity <soft_reset> (architecture <implementation>) with generics from library <proc_common_v3_00_a>.
 
 Elaborating entity <user_logic> (architecture <IMP>) with generics from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\tariqmuh\Documents\GitHub\ECE552_CamCtl\user_logic.vhd" Line 808. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\tariqmuh\Documents\GitHub\ECE552_CamCtl\user_logic.vhd" Line 863. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\tariqmuh\Documents\GitHub\ECE552_CamCtl\user_logic.vhd" Line 998. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\fpga\ISE\ECE532_CAMCtl_MS\user_logic.vhd" Line 816. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\fpga\ISE\ECE532_CAMCtl_MS\user_logic.vhd" Line 871. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\fpga\ISE\ECE532_CAMCtl_MS\user_logic.vhd" Line 1006. Case statement is complete. others clause is never selected
 
 Elaborating entity <srl_fifo_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
 
@@ -343,13 +343,16 @@ Elaborating entity <srl_fifo_rbu_f> (architecture <imp>) with generics from libr
 Elaborating entity <cntr_incr_decr_addn_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
 
 Elaborating entity <dynshreg_f> (architecture <behavioral>) with generics from library <proc_common_v3_00_a>.
-ERROR:HDLCompiler:890 - "C:\Users\tariqmuh\Documents\GitHub\ECE552_CamCtl\user_logic.vhd" Line 1108: wait statement without UNTIL clause not supported for synthesis
+
+Elaborating entity <fifo> (architecture <fifo_a>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\fpga\ISE\ECE532_CAMCtl_MS\user_logic.vhd" Line 1205: bus2ip_resetn should be on the sensitivity list of the process
+ERROR:HDLCompiler:76 - "C:\fpga\ISE\ECE532_CAMCtl_MS\user_logic.vhd" Line 1210: statement is not synthesizable since it does not hold its value under NOT(clock-edge) condition
 Netlist user_logic(0,16,4,32,32,12,32,9,32)(IMP) remains a blackbox, due to errors in its contents
 --> 
 
-Total memory usage is 254308 kilobytes
+Total memory usage is 252988 kilobytes
 
 Number of errors   :    1 (   0 filtered)
-Number of warnings :   12 (   0 filtered)
+Number of warnings :   13 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

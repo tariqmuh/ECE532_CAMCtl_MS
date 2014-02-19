@@ -306,6 +306,7 @@ constant WR_BATCH : natural := 32;
 	signal p1_wr_count         : std_logic_vector(6 downto 0) ;
 	signal p1_wr_underrun     	: std_logic;
 	signal p1_wr_error         : std_logic;
+	signal p1_en : std_logic;
 
 	signal p2_cmd_clk        	: std_logic;
    signal p2_cmd_en          	: std_logic;
@@ -323,6 +324,11 @@ constant WR_BATCH : natural := 32;
 	signal p2_wr_count         : std_logic_vector(6 downto 0) ;
 	signal p2_wr_underrun     : std_logic;
 	signal p2_wr_error         : std_logic;	
+	signal p2_en : std_logic;
+		signal p2_fifo_full        : std_logic;
+	signal p2_rd_data_count			: std_logic_vector (10 DOWNTO 0);
+	signal p2_data_out 			: std_logic_vector (C3_P1_DATA_PORT_SIZE -1 downto 0);
+	signal p2_rd_en 				: std_logic;
 	
 	signal pa_wr_cnt, pb_wr_cnt : natural := 0;
 	signal pa_wr_addr, pb_wr_addr : std_logic_vector(C_MST_AWIDTH-1 downto 0);
@@ -398,7 +404,7 @@ constant WR_BATCH : natural := 32;
   signal mst_fifo_valid_write_xfer      : std_logic;
   signal mst_fifo_valid_read_xfer       : std_logic;
   signal Bus2IP_Reset                   : std_logic;
-  type CAMA_SM_TYPE is (CAMA_IDLE, CAMA_INIT, CAMA_GO, CAMA_DONE);
+  type CAMA_SM_TYPE is (CAM_IDLE, CAMA_INIT, CAMA_GO, CAMB_INIT, CAMB_GO);
   signal cama_sm_state : CAMA_SM_TYPE;
 attribute SIGIS of Bus2IP_Reset   : signal is "RST";
 
@@ -1121,8 +1127,12 @@ process(Bus2IP_Clk) begin
 				ENA <= '0';
 				DIA <= X"BEEF";
 				CLKA <= '0';
+				CLKB <= '0';
+				ENB <= '0';
+				DIB <= X"FEED";
 			else
 				ENA <= not ENA;
+				ENB <= not ENB;
 				if (ENA = '1') then
 					if (DIA = X"BEEF") then
 					  DIA <= X"DEAD";
@@ -1133,7 +1143,18 @@ process(Bus2IP_Clk) begin
 					end if;
 				end if;
 				
+				if (ENB = '1') then
+					if (DIB = X"BEEF") then
+					  DIB <= X"DEAD";
+					elsif (DIB = X"DEAD") then
+					  DIB <= X"FEED";
+					elsif (DIB = X"FEED") then
+					  DIB <= X"BEEF";
+					end if;
+				end if;
+				
 				CLKA <= not CLKA;
+				CLKB <= not CLKA;
 			end if;
 		end if;
 end process;
@@ -1145,17 +1166,36 @@ CAM_FIFO : fifo
     rd_clk => Bus2IP_Clk,
     din => p1_wr_data,
     wr_en => p1_wr_en,
-    rd_en => mst_fifo_valid_read_xfer, -- p1_rd_en,
+    rd_en => p1_rd_en,
     dout => p1_data_out,
     full => p1_fifo_full,
     empty => p1_wr_empty,
 	 rd_data_count => p1_rd_data_count
   );
+  
+    CAMB_FIFO : fifo
+  PORT MAP (
+    rst => Bus2IP_Reset,
+    wr_clk => CLKB,
+    rd_clk => Bus2IP_Clk,
+    din => p2_wr_data,
+    wr_en => p2_wr_en,
+    rd_en => p2_rd_en,
+    dout => p2_data_out,
+    full => p2_fifo_full,
+    empty => p2_wr_empty,
+	rd_data_count => p2_rd_data_count
+  );
+  
+  p1_rd_en <= mst_fifo_valid_read_xfer and p1_en;
+  p2_rd_en <= mst_fifo_valid_read_xfer and p2_en;
 	
-	IP2Bus_MstWr_d <= p1_data_out;
+	
+	IP2Bus_MstWr_d <= p1_data_out when p1_en = '1' else p2_data_out;
 
 	CAMA_CLK <= CLKA;
 	p1_wr_data(31 downto 16) <= DIA;
+	p2_wr_data(31 downto 16) <= DIB;
 
 --	process(Bus2IP_Clk) begin
 --		if Rising_Edge(Bus2IP_Clk) then
@@ -1195,29 +1235,59 @@ CAM_FIFO : fifo
 				end if;
 		end if;
 	end process;
+	
+	process(CLKB) begin
+
+			if ( Bus2IP_Resetn = '0' ) then
+					p2_wr_en <= '0';
+
+					pb_wr_data_sel <= '0';
+			end if;
+			if Rising_Edge(CLKB) then
+				if(ENB = '1') then
+					if (pb_wr_data_sel = '0') then
+						p2_wr_data(15 downto 0) <= DIB;
+					end if;
+
+					p2_wr_en <= pb_wr_data_sel;
+					
+					pb_wr_data_sel <= not pb_wr_data_sel;
+				else 
+					p2_wr_en <= '0';
+			
+				end if;
+			end if;
+		
+	end process;
 
 	process(Bus2IP_Clk) begin
 		if Rising_Edge(Bus2IP_Clk) then
 			if ( Bus2IP_Resetn = '0' ) then
-					cama_sm_state <= CAMA_IDLE;
+					cama_sm_state <= CAM_IDLE;
 					mst_cntl_wr_req <= '0';
 					pa_wr_addr <= X"A0000000";
+					pb_wr_addr <= X"A8000000";
+					p1_en <= '0';
+					p2_en <= '0';
 			else
-				--mst_cntl_wr_req <= '0';
-				--pa_wr_addr <= X"A0000000";
 				
 				case cama_sm_state is
 						
-					when CAMA_IDLE => 
+					when CAM_IDLE => 
 							
-						if(p1_rd_data_count > X"40") then
-							cama_sm_state <= CAMA_INIT;
-							mst_cntl_wr_req <= '1';
-							p1_rd_en <= '1';
+						if(p1_rd_data_count >= X"10" or p2_rd_data_count >= X"10") then
+							if(p1_rd_data_count > p2_rd_data_count) then
+								cama_sm_state <= CAMA_INIT;
+								mst_cntl_wr_req <= '1';
+								p1_en <= '1';
+							else 
+								cama_sm_state <= CAMB_INIT;
+								mst_cntl_wr_req <= '1';
+								p2_en <= '1';
+							end if;
 						end if;
 						
 					when CAMA_INIT =>
-						p1_rd_en <= '0';
 						if(Bus2IP_Mst_CmdAck = '1') then
 							cama_sm_state <= CAMA_GO;
 							mst_cntl_wr_req <= '0';
@@ -1228,23 +1298,44 @@ CAM_FIFO : fifo
 					when CAMA_GO =>
 						
 						if(Bus2IP_Mst_Cmplt = '1') then
-							cama_sm_state <= CAMA_IDLE;
-							if (pa_wr_addr = X"A3A97FC") then
+							cama_sm_state <= CAM_IDLE;
+							p1_en <= '0';
+							if (pa_wr_addr = X"A03A97C0") then
 								pa_wr_addr <= X"A0000000";
 							else
-								pa_wr_addr <= pa_wr_addr + 256;
+								pa_wr_addr <= pa_wr_addr + 64;
+							end if;
+						end if;
+						
+					when CAMB_INIT =>
+						if(Bus2IP_Mst_CmdAck = '1') then
+							cama_sm_state <= CAMB_GO;
+							mst_cntl_wr_req <= '0';
+	
+							
+						end if;
+						
+					when CAMB_GO =>
+						
+						if(Bus2IP_Mst_Cmplt = '1') then
+							cama_sm_state <= CAM_IDLE;
+							p2_en <= '0';
+							if (pb_wr_addr = X"A83A97C0") then
+								pb_wr_addr <= X"A8000000";
+							else
+								pb_wr_addr <= pb_wr_addr + 64;
 							end if;
 						end if;
 					
 					when others => 
-						cama_sm_state <= CAMA_IDLE;
+						cama_sm_state <= CAM_IDLE;
 				end case;
 			end if;
 		
 		end if;
 	end process;
 	
-mst_ip2bus_addr <= pa_wr_addr;
+mst_ip2bus_addr <= pa_wr_addr when p1_en = '1' else pb_wr_addr;
 
 
 end IMP;

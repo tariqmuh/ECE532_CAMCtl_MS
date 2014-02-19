@@ -57,15 +57,20 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="compxlib.log"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1392672502" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1392672502">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1392741867" xil_pn:in_ck="6962292562376215251" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1392741867">
+    <transform xil_pn:end_ts="1392827414" xil_pn:in_ck="-8804817235213054107" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1392827413">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd"/>
       <outfile xil_pn:name="C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd"/>
       <outfile xil_pn:name="C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd"/>
@@ -176,9 +181,14 @@
       <outfile xil_pn:name="ipcore_dir/fifo.vhd"/>
       <outfile xil_pn:name="ipcore_dir/fifo_synth.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1392741867" xil_pn:in_ck="-5677963228492105106" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1392741867">
+    <transform xil_pn:end_ts="1392827414" xil_pn:in_ck="-8804817235213054107" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1392827414">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd"/>
       <outfile xil_pn:name="C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd"/>
       <outfile xil_pn:name="C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd"/>
@@ -270,15 +280,18 @@
       <outfile xil_pn:name="TWICtl.vhd"/>
       <outfile xil_pn:name="Video.vhd"/>
       <outfile xil_pn:name="VmodCAM_Ref.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/fifo.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/fifo_synth.vhd"/>
       <outfile xil_pn:name="user_logic.vhd"/>
       <outfile xil_pn:name="vmodcam.vhd"/>
       <outfile xil_pn:name="vmodcam_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1392744936" xil_pn:in_ck="-5677963228492105106" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3286620494048968334" xil_pn:start_ts="1392744933">
+    <transform xil_pn:end_ts="1392827419" xil_pn:in_ck="1393648463146578432" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3286620494048968334" xil_pn:start_ts="1392827414">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="vmodcam_tb.fdo"/>
       <outfile xil_pn:name="vsim.wlf"/>
       <outfile xil_pn:name="work"/>
@@ -291,13 +304,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1392225184" xil_pn:in_ck="2640052728245442763" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="8593631815950997442" xil_pn:start_ts="1392225184">
+    <transform xil_pn:end_ts="1392827244" xil_pn:in_ck="2640052728245442763" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="8593631815950997442" xil_pn:start_ts="1392827243">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ipcore_dir/fifo.ngc"/>
       <outfile xil_pn:name="ipcore_dir/fifo.vhd"/>
       <outfile xil_pn:name="ipcore_dir/fifo_synth.vhd"/>
@@ -313,20 +322,15 @@
     <transform xil_pn:end_ts="1391834691" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8977612015756273942" xil_pn:start_ts="1391834691">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1391834691" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="6078191903062053964" xil_pn:start_ts="1391834691">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1392690110" xil_pn:in_ck="-5939168754353181554" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-2466935483707116197" xil_pn:start_ts="1392690082">
+    <transform xil_pn:end_ts="1392827769" xil_pn:in_ck="-299382913757611744" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-2466935483707116197" xil_pn:start_ts="1392827738">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="vmodcam.lso"/>
       <outfile xil_pn:name="vmodcam.ngc"/>
@@ -341,7 +345,6 @@
     <transform xil_pn:end_ts="1391840074" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8294102548058718920" xil_pn:start_ts="1391840074">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1392231671" xil_pn:in_ck="-5476346590913014522" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4837071367205650483" xil_pn:start_ts="1392231658">
       <status xil_pn:value="AbortedRun"/>
