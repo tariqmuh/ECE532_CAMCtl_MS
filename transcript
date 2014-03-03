@@ -3270,3 +3270,4 @@ run -all
 #    Time: 100200 ns  Iteration: 0  Instance: /vmodcam_tb
 # 1
 # Break in Module vmodcam_tb at vmodcam_tb.v line 239
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/fpga/ISE/ECE532_CAMCtl_MS/wave.do
