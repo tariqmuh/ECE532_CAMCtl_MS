@@ -1124,34 +1124,16 @@ begin
 process(Bus2IP_Clk) begin
 		if Rising_Edge(Bus2IP_Clk) then
 			if (Bus2IP_Reset = '1') then
-				ENA <= '0';
-				DIA <= X"BEEF";
+				--ENA <= '0';
+			--	DIA <= X"AAAA";
 				CLKA <= '0';
 				CLKB <= '0';
-				ENB <= '0';
-				DIB <= X"FEED";
+				--ENB <= '0';
+				--DIB <= X"AAAA";
 			else
-				ENA <= not ENA;
-				ENB <= not ENB;
-				if (ENA = '1') then
-					if (DIA = X"BEEF") then
-					  DIA <= X"DEAD";
-					elsif (DIA = X"DEAD") then
-					  DIA <= X"FEED";
-					elsif (DIA = X"FEED") then
-					  DIA <= X"BEEF";
-					end if;
-				end if;
+				--ENA <= not ENA;
+				--ENB <= not ENB;
 				
-				if (ENB = '1') then
-					if (DIB = X"BEEF") then
-					  DIB <= X"DEAD";
-					elsif (DIB = X"DEAD") then
-					  DIB <= X"FEED";
-					elsif (DIB = X"FEED") then
-					  DIB <= X"BEEF";
-					end if;
-				end if;
 				
 				CLKA <= not CLKA;
 				CLKB <= not CLKA;
@@ -1197,68 +1179,110 @@ CAM_FIFO : fifo
 	p1_wr_data(31 downto 16) <= DIA;
 	p2_wr_data(31 downto 16) <= DIB;
 
---	process(Bus2IP_Clk) begin
---		if Rising_Edge(Bus2IP_Clk) then
---			if ( Bus2IP_Resetn = '0' ) then
---				pa_wr_addr <= X"A0000000";
---			else
---				if (mst_fifo_valid_read_xfer = '1') then
---					if (pa_wr_addr = X"A0000000" + 1600*1200*2) then
---						pa_wr_addr <= X"A0000000";
---					else
---						pa_wr_addr <= pa_wr_addr + 4;
---					end if;
---				end if;
---			end if;
---		end if;
---	end process;
+	process (ENA) begin
+	
+		if ( Bus2IP_Resetn = '0' ) then
+					--p1_wr_en <= '0';
+						DIA <= X"AAAA";
+		end if;
+		
+		
+		if Rising_Edge(ENA) then
+		
+					if (DIA = X"DDDD") then
+					  DIA <= X"AAAA";
+					elsif (DIA = X"AAAA") then
+					  DIA <= X"BBBB";
+					elsif (DIA = X"BBBB") then
+					  DIA <= X"CCCC";
+					elsif (DIA = X"CCCC") then
+					  DIA <= X"DDDD";
+					end if;
+			
+		end if;
+	end process;
 
 	process(CLKA) begin
-	  -- async reset
-	  if ( Bus2IP_Resetn = '0' ) then
-					p1_wr_en <= '0';
 
+			if ( Bus2IP_Resetn = '0' ) then
+					--p1_wr_en <= '0';
+					--	DIA <= X"AAAA";
+					ENA <= '0';
 					pa_wr_data_sel <= '0';
-		end if;
-		if Rising_Edge(CLKA) then
+			end if;
+			
+--			if (ENA = '1') then
+--					if (DIA = X"DDDD") then
+--					  DIA <= X"AAAA";
+--					elsif (DIA = X"AAAA") then
+--					  DIA <= X"BBBB";
+--					elsif (DIA = X"BBBB") then
+--					  DIA <= X"CCCC";
+--					elsif (DIA = X"CCCC") then
+--					  DIA <= X"DDDD";
+--					end if;
+--			end if;
+			
+			if Rising_Edge(CLKA) then
+				ENA <= not ENA;
 				if(ENA = '1') then
 					if (pa_wr_data_sel = '0') then
 						p1_wr_data(15 downto 0) <= DIA;
 					end if;
 
-					p1_wr_en <= pa_wr_data_sel;
+					--p1_wr_en <= pa_wr_data_sel;
 					
 					pa_wr_data_sel <= not pa_wr_data_sel;
-				else 
-					p1_wr_en <= '0';
+				--else 
+					--p1_wr_en <= '0';
 			
 				end if;
-		end if;
+			end if;
 	end process;
+	
+	--ADDED
+	p1_wr_en <= pa_wr_data_sel and ENA;
 	
 	process(CLKB) begin
 
 			if ( Bus2IP_Resetn = '0' ) then
-					p2_wr_en <= '0';
-
+					--p2_wr_en <= '0';
+					ENB <= '0';
+						DIB <= X"AAAA";
 					pb_wr_data_sel <= '0';
 			end if;
+				
+				if (ENB = '1') then
+					if (DIB = X"DDDD") then
+					  DIB <= X"BBBB";
+					elsif (DIB = X"BBBB") then
+					  DIB <= X"CCCC";
+					elsif (DIB = X"CCCC") then
+					  DIB <= X"DDDD";
+					end if;
+				end if;
+			
+			
 			if Rising_Edge(CLKB) then
+				ENB <= not ENB;
 				if(ENB = '1') then
 					if (pb_wr_data_sel = '0') then
 						p2_wr_data(15 downto 0) <= DIB;
 					end if;
 
-					p2_wr_en <= pb_wr_data_sel;
+					--p2_wr_en <= pb_wr_data_sel;
 					
 					pb_wr_data_sel <= not pb_wr_data_sel;
-				else 
-					p2_wr_en <= '0';
+				--else 
+					--p2_wr_en <= '0';
 			
 				end if;
 			end if;
-		
 	end process;
+	
+	--ADDED
+	p2_wr_en <= pb_wr_data_sel and ENB;
+
 
 	process(Bus2IP_Clk) begin
 		if Rising_Edge(Bus2IP_Clk) then

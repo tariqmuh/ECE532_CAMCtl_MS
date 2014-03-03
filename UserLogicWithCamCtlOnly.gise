@@ -28,6 +28,7 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="compxlib.log"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="user_logic.fdo"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="vmodcam.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="vmodcam.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="vmodcam.lso"/>
@@ -64,7 +65,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1392827414" xil_pn:in_ck="-8804817235213054107" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1392827413">
+    <transform xil_pn:end_ts="1393875355" xil_pn:in_ck="-8804817235213054107" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1393875353">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -166,11 +167,11 @@
       <outfile xil_pn:name="vmodcam.vhd"/>
       <outfile xil_pn:name="vmodcam_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1392675709" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5210238539333748375" xil_pn:start_ts="1392675709">
+    <transform xil_pn:end_ts="1393875579" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5210238539333748375" xil_pn:start_ts="1393875579">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1392675709" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5571501066041475097" xil_pn:start_ts="1392675709">
+    <transform xil_pn:end_ts="1393875579" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5571501066041475097" xil_pn:start_ts="1393875579">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -181,7 +182,7 @@
       <outfile xil_pn:name="ipcore_dir/fifo.vhd"/>
       <outfile xil_pn:name="ipcore_dir/fifo_synth.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1392827414" xil_pn:in_ck="-8804817235213054107" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1392827414">
+    <transform xil_pn:end_ts="1393875355" xil_pn:in_ck="-8804817235213054107" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1393875355">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -284,7 +285,7 @@
       <outfile xil_pn:name="vmodcam.vhd"/>
       <outfile xil_pn:name="vmodcam_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1392827419" xil_pn:in_ck="1393648463146578432" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3286620494048968334" xil_pn:start_ts="1392827414">
+    <transform xil_pn:end_ts="1393875583" xil_pn:in_ck="1393648463146578432" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3286620494048968334" xil_pn:start_ts="1393875579">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
